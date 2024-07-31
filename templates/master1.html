@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {% load static %}
+    <script src="{% static 'bootstrap/js/jquery-3.4.0.js' %}"></script>
+    <script src="{% static 'bootstrap/js/popper.min.js' %}"></script>
+    <script src="{% static 'bootstrap/js/bootstrap.js' %}"></script>
+
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'bootstrap/css/styles.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+          integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+          crossorigin="anonymous">
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <a class="navbar-brand" href="#">
+                <img src="../static/images/chaohu_haitian_logo.jpg" alt="logo" style="width:150px;">
+            </a>
+        </div>
+        <div class="col"><br>
+            <i class="fas fa-phone fa-rotate-180 fa-flip-horizontal"></i>
+            <strong style="font-family: 'Agency FB', serif">+254784700200</strong>
+        </div>
+    </div>
+</div>
+
+<nav style="background-color: #040694" class="navbar navbar-expand-sm navbar-dark sticky-top">
+
+    <!-- Links -->
+    <ul class="navbar-nav mx-5">
+        <li class="nav-item">
+            <a style="color: #ffffff" class="nav-link" href="{% url 'home-url' %}">Home</a>
+        </li>
+        <li class="nav-item font-family: -apple-system, serif;">
+            <a style="color: #ffffff" class="nav-link" href="{% url 'about1-url' %}">About Us</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a style="color: #ffffff" class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Services
+            </a>
+            <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+                <a style="font-family: -apple-system,serif" class="dropdown-item" href="{% url 'shipBuilding-url' %}">Ship Building</a>
+                <a style="font-family: -apple-system,serif" class="dropdown-item" href="#">Marine Equipment Supply and Accesories</a>
+                <a style="font-family: -apple-system,serif" class="dropdown-item" href="#">Fishing</a>
+                <a style="font-family: -apple-system,serif" class="dropdown-item" href="{% url 'dredging-url' %}">Dredging Services</a>
+                <a style="font-family: -apple-system,serif" class="dropdown-item" href="#">Mining</a>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a style="color: #ffffff" class="nav-link" href="{% url 'contact1-url' %}">Contact Us</a>
+        </li>
+    </ul>
+    <ul class="navbar-nav ml-auto mx-5">
+        <li class="nav-item dropdown">
+            <a style="color: #ffffff" class="nav-link dropdown-toggle" href="#" id="ourOtherCompaniesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Our other Companies</a>
+            <div style="background-color: #ec05d9" class="dropdown-menu" aria-labelledby="servicesDropdown">
+                <a style="font-family: -apple-system, serif; font-weight: bold; background-color:#FF0000" class="dropdown-item" href="#">Zurian Tian Technology Limited</a>
+                <a style="font-family: -apple-system, serif; font-weight: bold; background-color: #34ce57" class="dropdown-item" href="#">Khusafric</a>
+
+            </div>
+        </li>
+
+    </ul>
+
+</nav>
+{% block content %}
+
+{% endblock %}
+<div style="background-color: rgba(23,54,93,0.75)">
+    <div class="footer row pl-5">
+        <div class="col-md-3">
+            <h4 style="font-family: Georgia,serif; color: #ffffff">Get in Touch</h4>
+            <h6 style="font-family: Georgia,serif;color: #040505">Mombasa, Links Road,</h6>
+            <h6 style="font-family: Georgia,serif; color: #040505">Amal Plaza,</h6>
+            <h6 style="font-family: Georgia,serif; color: #040505">P.O BOX 34172 - 808100,</h6>
+            <h6 style="font-family: Georgia,serif; color: #040505">MOMBASA, KENYA.</h6>
+            <h6 style="font-family: Georgia,serif; color: #040505">Mobile: 0784700200</h6>
+            <h6 style="font-family: Georgia,serif; color: #040505">Email: ______________</h6>
+        </div>
+        <div class="col-md-3">
+            <h4 style="font-family: Georgia,serif; color: #ffffff">Connect with us</h4>
+            {#            <a href=""> <img style="width: 60px; height: 60px" src="../static/images/fb.jpg" alt=""></a>#}
+            {#            <a href=""> <img style="width: 60px; height: 60px" src="../static/images/ig.jpg" alt=""></a>#}
+        </div>
+        <div class="col-md-3">
+             <h4 style="font-family: Georgia,serif; color: #ffffff">Our Company Seal</h4>
+            <img src="../static/images/seal.jpg" style="width: 200px" alt="">
+        </div>
+
+        <div class="col-md-3">
+            <h4 style="font-family: Georgia,serif; color: #ffffff">Quick Links</h4>
+            <a style="font-family: Georgia,serif;color: #040694" href="{% url 'home-url' %}">HOME</a>
+        </div>
+
+    </div>
+    <hr>
+    <footer style="font-family: Georgia,serif;color: #040505" class="text-center">
+        ©2024. Chaohu Haitian Shipbuilding CO Ltd. All Rights Reversed.
+       Designed By: <a href="https://effilinksolutions.co.ke/">Effilink Solutions</a>
+    </footer>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+{% extends 'master1.html' %}
+{% block content %}
+    {% load static %}
+    <div style="background-color: #007bff; font-family: Georgia,serif; color: #040505" class="text-center">
+        <h3>Ship Building</h3>
+    </div>
+    <div>
+        <div style="font-family: Georgia,serif; color: #040505" class="pl-3 pr-3">
+            <div class="row">
+                <div class="col-sm-6">
+                    <img class="rounded img-fluid" src="../static/images/shipdesign.jpg" alt="">
+                </div>
+                <div class="col-sm-6">
+                    <p>Over the years Chaohu Haitian Ship Building Co Ltd has accumulated a wealth of experience in the building of a wide variety
+                        of marine vehicles and put into operation successfully including workboats, tugs, oil tankers, passenger vessel, fast military
+                        craft and offshore supply vessels, from our range of small general cargo to our largest Cargo vessels and of course our great
+                        assortment of designing Catamarans and other multihulls and several high speed of GRP boats as well.</p>
+                    <p>We cover all phases and disciplines of the ship design process. Each project is planned according to our
+                        client’s needs and preferences.</p>
+                    <p>Chaohu Haitian Ship Building Co Ltd uses the latest ship design software packages to enable it to optimise all of its designs in terms of
+                        economy of build and operation in service. We constantly strive to create forward-thinking designs that are stable,
+                        fuel efficient and individually tailor made for the range of tasks in hand.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr style="background-color: blue">
+
+    <div style="font-family: Georgia,serif; color: #040505" class="container">
+        <blockquote class="blockquote">
+            <p class="mb-0">Two Seahorses were successfully delivered to Bangladesh Army on 13th of November 2017.
+                Major General Abu Syeed Md Masud was present as the Chief Guest. The handover ceremony was held in
+                Dockyard and Engineering Works Ltd.</p>
+        </blockquote>
+        <br>
+        <div class="row">
+            <div class="col-sm-4 ">
+                <img style="width: 200px" src="../static/images/seaHorse.jpg" class="img-fluid" alt="Photo 1">
+                <a href="{% url 'seaHorse-url' %}"><p>Sea Horse</p></a>
+            </div>
+
+            <div class="col-sm-4 ">
+                <img style="width: 200px" src="../static/images/greenLine1.jpg" class="img-fluid" alt="Photo 1">
+                <a href="{% url 'greenline1-url' %}"><p>Green Line 1</p></a>
+            </div>
+
+            <div class="col-sm-4 ">
+                <img style="width: 200px" src="../static/images/finfin.jpg" class="img-fluid" alt="Photo 2">
+                <a href="{% url 'finFin-url' %}"><p>FINFIN</p></a>
+            </div>
+
+            <div class="col-sm-4">
+                <img style="width: 200px" src="../static/images/darEsSalaam.jpg" class="img-fluid" alt="Photo 3">
+                <a href="{% url 'darEsSalaam-url' %}"> <p>Dar Es Salaam</p></a>
+            </div>
+
+            <div class="col-sm-4 ">
+                <img style="width: 200px" src="../static/images/barrackBarge.jpg" class="img-fluid" alt="Photo 3">
+                <a href="{% url 'barrackBarge-url' %}"><p>Barrack Barge</p></a>
+            </div>
+
+            <div class="col-sm-4">
+                <img style="width: 200px" src="../static/images/10MDahor.jpg" class="img-fluid" alt="Photo 3">
+                <a href="{% url '10MDahor-url' %}"><p>10M Dahor</p></a>
+            </div>
+
+            <div class="col-sm-4 ">
+                <img style="width: 200px" src="../static/images/10MPatrolBoat.jpg" class="img-fluid" alt="Photo 3">
+                <a href="{% url '10MPatrolBoat-url' %}">  <p>10M Patrol Boat</p></a>
+            </div>
+
+        </div>
+    </div>
+{% endblock %}

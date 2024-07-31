@@ -1,0 +1,23 @@
+.nav-link{
+    font-family: 'Agency FB',serif;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.fas fa-phone{
+    padding-left: 10px;
+}
+
+.carousel-inner img {
+    max-height: 420px; /* Adjust the value as per your requirement */
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}

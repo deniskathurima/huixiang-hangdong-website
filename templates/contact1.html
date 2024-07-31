@@ -1,0 +1,17 @@
+{% extends 'master1.html' %}
+{% block content %} <br>
+    {% load static %}
+    <h3 style="font-family: Georgia,serif; color: #040505" class="text-center"> Get In Touch</h3>
+    <div class="container">
+        <form action="">
+            <label for="name"> Name</label>
+            <input type="text" class="form-control" placeholder="Enter your name" id="name"  required> <br> <br>
+            <label for="email"> Email:</label>
+            <input type="email" class="form-control" placeholder="Enter email" id="email"  required> <br> <br>
+            <label for="message"> Message</label>
+            <textarea class="form-control" rows="5" id="message" name="text"  required></textarea> <br>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <br>
+{% endblock %}

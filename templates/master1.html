@@ -10,6 +10,7 @@
 
     <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.css' %}">
     <link rel="stylesheet" href="{% static 'bootstrap/css/styles.css' %}">
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
           integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
           crossorigin="anonymous">
@@ -32,7 +33,7 @@
 <nav style="background-color: #040694" class="navbar navbar-expand-sm navbar-dark sticky-top">
 
     <!-- Links -->
-    <ul style="font-family: 'Agency FB',serif; font-weight: bolder; font-size: 25px" class="navbar-nav mx-5">
+    <ul style="font-family: 'Agency FB',serif; font-weight: bolder; font-size: x-large" class="navbar-nav mx-5">
         <li class="nav-item">
             <a style="color: #ffffff" class="nav-link" href="{% url 'home-url' %}">Home</a>
         </li>
@@ -46,7 +47,7 @@
             <div class="dropdown-menu" aria-labelledby="servicesDropdown">
                 <a style="font-family: -apple-system,serif" class="dropdown-item" href="{% url 'shipBuilding-url' %}">Ship Building</a>
                 <a style="font-family: -apple-system,serif" class="dropdown-item" href="#">Marine Equipment Supply and Accesories</a>
-                <a style="font-family: -apple-system,serif" class="dropdown-item" href="#">Fishing</a>
+                <a style="font-family: -apple-system,serif" class="dropdown-item" href="{% url 'fishing-url' %}">Fishing</a>
                 <a style="font-family: -apple-system,serif" class="dropdown-item" href="{% url 'dredging-url' %}">Dredging Services</a>
                 <a style="font-family: -apple-system,serif" class="dropdown-item" href="#">Mining</a>
             </div>
@@ -55,7 +56,7 @@
             <a style="color: #ffffff" class="nav-link" href="{% url 'contact1-url' %}">Contact Us</a>
         </li>
     </ul>
-    <ul style="font-family: 'Agency FB',serif; font-weight: bolder; font-size: 25px"             class="navbar-nav ml-auto mx-5">
+    <ul style="font-family: 'Agency FB',serif; font-weight: bolder; font-size: x-large"             class="navbar-nav ml-auto mx-5">
         <li class="nav-item dropdown">
             <a style="color: #ffffff" class="nav-link dropdown-toggle" href="#" id="ourOtherCompaniesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Our other Companies</a>
             <div style="background-color: #ec05d9" class="dropdown-menu" aria-labelledby="servicesDropdown">
@@ -94,7 +95,9 @@
 
         <div class="col-md-3">
             <h4 style="font-family: Georgia,serif; color: #ffffff">Quick Links</h4>
-            <a style="font-family: Georgia,serif;color: #040694" href="{% url 'home-url' %}">HOME</a>
+            <a style="font-family: Georgia,serif;color: #040694" href="{% url 'home-url' %}">HOME</a> <br>
+            <a style="font-family: Georgia,serif;color: #040694" href="{% url 'about1-url' %}">ABOUT US</a> <br>
+            <a style="font-family: Georgia,serif;color: #040694" href="{% url 'contact1-url' %}">CONTACT US</a>
         </div>
 
     </div>

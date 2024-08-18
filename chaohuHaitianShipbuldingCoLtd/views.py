@@ -47,3 +47,7 @@ def mPatrolBoat(request):
 
 def dregering(request):
     return render(request, 'dredging.html')
+
+
+def fishing(request):
+    return render(request, 'fishing.html')

@@ -32,4 +32,5 @@ urlpatterns = [
     path('10MDahor/', chaohu_views.mDahor, name='10MDahor-url'),
     path('10MPatrolBoat/', chaohu_views.mPatrolBoat, name='10MPatrolBoat-url'),
     path('dredging/', chaohu_views.dregering, name='dredging-url'),
+    path('fishing/', chaohu_views.fishing, name='fishing-url'),
 ]

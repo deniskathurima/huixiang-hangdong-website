@@ -2,7 +2,7 @@ from django.shortcuts import render
 
 
 def home(request):
-    return render(request, 'Hindex.html')
+    return render(request, 'index.html')
 
 
 def about1(request):
